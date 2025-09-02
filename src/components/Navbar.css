@@ -1,0 +1,62 @@
+/* Mengimpor font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Gaya utama untuk navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem; /* Sedikit lebih banyak padding horizontal */
+  background-color: #1F2B6C; /* Warna latar belakang sesuai permintaan */
+  font-family: 'Poppins', sans-serif; /* Font estetik */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+}
+
+/* Gaya untuk brand/logo */
+.nav-brand {
+  font-size: 1.75rem;
+  font-weight: 700; /* Dibuat lebih tebal */
+  color: #BFD2F8; /* Warna biru muda yang kontras */
+  text-decoration: none;
+}
+
+/* Kontainer untuk link navigasi */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Jarak antar item */
+}
+
+/* Gaya dasar untuk link biasa */
+.nav-link-item {
+  color: #FEFEFE; /* Putih bersih */
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efek hover untuk link biasa */
+.nav-link-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan saat di-hover */
+}
+
+/* Gaya khusus untuk tombol "Register" */
+.nav-button {
+  color: #1F2B6C; /* Teks warna biru tua */
+  background-color: #BFD2F8; /* Latar belakang biru muda */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem; /* Padding lebih besar agar terlihat seperti tombol */
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek hover untuk tombol "Register" */
+.nav-button:hover {
+  background-color: #FEFEFE; /* Latar belakang menjadi putih saat di-hover */
+  transform: translateY(-2px); /* Efek sedikit terangkat */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,14 @@
+/* src/layouts/DashboardLayout.css */
+.dashboard-layout {
+    display: flex;
+  }
+  
+  .dashboard-main-content {
+    flex-grow: 1;
+    /* Memberi margin kiri seukuran lebar sidebar */
+    margin-left: 250px; 
+    padding: 20px;
+    /* Ganti warna background agar kontras dengan widget */
+    background-color: #f4f6f9; 
+    min-height: 100vh;
+  }

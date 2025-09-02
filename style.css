@@ -1,0 +1,280 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80vh;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Form Section */
+.form-section {
+    flex-basis: 55%;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.form-section::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    width: 2px;
+    background-color: #63b3ed; /* Bright blue divider */
+}
+
+.form-wrapper {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.header a, .terms a, .footer-login a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Form Groups and Inputs */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #63b3ed;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Password Requirements List */
+.password-reqs {
+    list-style: none;
+    padding: 0;
+    margin: -0.5rem 0 1.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.password-reqs li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.password-reqs li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #d1d1d1;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 4px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: #2c3e50;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Terms and Footer */
+.terms {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #d1d5db;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b5563;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #c0c4c9;
+}
+
+.footer-login {
+    margin-top: 1.5rem;
+    color: #666;
+    text-align: left;
+}
+
+
+/* Image Section */
+.image-section {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section::before,
+.image-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: #1e2a4a; /* Dark Navy Blue */
+    z-index: 1;
+}
+
+.image-section::before {
+    top: 0;
+}
+
+.image-section::after {
+    bottom: 0;
+}
+
+.image-section img {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 2;
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        min-height: auto;
+        height: auto;
+    }
+
+    .form-section {
+        flex-basis: auto;
+        padding: 2rem;
+    }
+
+    .form-section::after {
+        display: none;
+    }
+
+    .image-section {
+        flex-basis: auto;
+        order: -1; /* Move image to the top */
+        min-height: 300px;
+        padding: 2rem 0;
+    }
+
+    .image-section img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .password-reqs {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-section {
+        display: none; /* Hide image on very small screens for better form visibility */
+    }
+    
+    .form-section {
+        padding: 2rem 1.5rem;
+    }
+}

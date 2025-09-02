@@ -1,0 +1,14 @@
+/* src/App.css */
+main {
+  /* Menggunakan Flexbox untuk centering */
+  display: flex;
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center;     /* Menengahkan secara vertikal */
+  
+  /* Memberi tinggi minimal agar konten bisa benar-benar di tengah layar */
+  /* 100vh = 100% tinggi viewport. Kita kurangi tinggi navbar (kira-kira 60px) */
+  min-height: calc(100vh - 70px); 
+  
+  /* Memberi sedikit ruang di sisi */
+  padding: 0px;
+}

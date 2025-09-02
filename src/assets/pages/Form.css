@@ -1,0 +1,94 @@
+/* src/pages/Form.css */
+.form-container {
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .role-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .role-selector button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .role-selector button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* src/pages/Form.css */
+
+/* ... gaya sebelumnya ... */
+
+/* Untuk tata letak 2 kolom di laptop */
+@media (min-width: 768px) {
+  .form-row { /* Buat div baru di JSX Anda untuk membungkus 2 form-group */
+    display: flex;
+    gap: 20px; /* Jarak antar kolom */
+    margin-bottom: 15px;
+  }
+
+  .form-row .form-group {
+    flex: 1; /* Setiap form-group mengambil ruang yang sama */
+    margin-bottom: 0; /* Hapus margin bawah jika sudah diatur di form-row */
+  }
+}
