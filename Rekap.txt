@@ -1,0 +1,24 @@
+1. Halaman Login dan Register untuk dokter dan admin tolong jangan dijadikan 1 Route yang sama *Ihsan
+(../admin/(login & Register))
+(../dokter/(login & Register))
+
+2. Penyesuaian Halaman Login dan Register untuk admin dan dokter  disesuaikan dengan link Figma *Ihsan
+
+3. Memastikan Halaman * kirouch
+Login(admin & dokter ) terhubung dengan database
+Register(admin & dokter ) terhubung dengan database
+
+Tutorial Github
+
+===========memperbarui github ===============
+git add .
+git status
+git commit -m "update project" => disesuaikan setiap mengerjakan fitur
+git push -u origin main
+
+============ update file vscode ========
+git pull
+
+================ Catatan ========================
+1. lakukan  update file vscode setelah rekan melakukan memperbarui github
+2. untuk lebih aman agar tidak terjadi error pada saat collab, lakukan git pull sebelum melakukan pembaruan github
